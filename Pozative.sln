@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pozative", "Pozative\Pozative.csproj", "{123704D1-699D-4367-BB88-B6743D95F753}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pozative.BAL", "Pozative.BAL\Pozative.BAL.csproj", "{3FB2037C-B2CE-416E-98EC-BC81AEC418D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pozative.BO", "Pozative.BO\Pozative.BO.csproj", "{844160CF-487D-4D56-BF47-C8807366DEC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pozative.DAL", "Pozative.DAL\Pozative.DAL.csproj", "{B6ECC8FE-E05C-4B23-980F-CD8E871A6EE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pozative.QRY", "Pozative.QRY\Pozative.QRY.csproj", "{A2F9B31E-46E5-4A27-B4D2-D0BEE9FBD0D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pozative.UTL", "Pozative.UTL\Pozative.UTL.csproj", "{C2DA7E9A-81E4-46CA-A5DF-6CE033BBDD18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{123704D1-699D-4367-BB88-B6743D95F753}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{123704D1-699D-4367-BB88-B6743D95F753}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{123704D1-699D-4367-BB88-B6743D95F753}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{123704D1-699D-4367-BB88-B6743D95F753}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FB2037C-B2CE-416E-98EC-BC81AEC418D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FB2037C-B2CE-416E-98EC-BC81AEC418D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FB2037C-B2CE-416E-98EC-BC81AEC418D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FB2037C-B2CE-416E-98EC-BC81AEC418D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{844160CF-487D-4D56-BF47-C8807366DEC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{844160CF-487D-4D56-BF47-C8807366DEC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{844160CF-487D-4D56-BF47-C8807366DEC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{844160CF-487D-4D56-BF47-C8807366DEC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6ECC8FE-E05C-4B23-980F-CD8E871A6EE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6ECC8FE-E05C-4B23-980F-CD8E871A6EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6ECC8FE-E05C-4B23-980F-CD8E871A6EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6ECC8FE-E05C-4B23-980F-CD8E871A6EE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2F9B31E-46E5-4A27-B4D2-D0BEE9FBD0D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2F9B31E-46E5-4A27-B4D2-D0BEE9FBD0D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2F9B31E-46E5-4A27-B4D2-D0BEE9FBD0D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2F9B31E-46E5-4A27-B4D2-D0BEE9FBD0D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2DA7E9A-81E4-46CA-A5DF-6CE033BBDD18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2DA7E9A-81E4-46CA-A5DF-6CE033BBDD18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2DA7E9A-81E4-46CA-A5DF-6CE033BBDD18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2DA7E9A-81E4-46CA-A5DF-6CE033BBDD18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF6606B4-7CD3-41D3-BB1B-7F700D67C385}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/pozativeapp
+		SccProjectUniqueName0 = Pozative\\Pozative.csproj
+		SccProjectName0 = Pozative
+		SccAuxPath0 = https://dev.azure.com/pozativeapp
+		SccLocalPath0 = Pozative
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = Pozative.BAL\\Pozative.BAL.csproj
+		SccProjectName1 = Pozative.BAL
+		SccAuxPath1 = https://dev.azure.com/pozativeapp
+		SccLocalPath1 = Pozative.BAL
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = Pozative.BO\\Pozative.BO.csproj
+		SccProjectName2 = Pozative.BO
+		SccAuxPath2 = https://dev.azure.com/pozativeapp
+		SccLocalPath2 = Pozative.BO
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName3 = Pozative.DAL\\Pozative.DAL.csproj
+		SccProjectName3 = Pozative.DAL
+		SccAuxPath3 = https://dev.azure.com/pozativeapp
+		SccLocalPath3 = Pozative.DAL
+		SccProvider3 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName4 = Pozative.QRY\\Pozative.QRY.csproj
+		SccProjectName4 = Pozative.QRY
+		SccAuxPath4 = https://dev.azure.com/pozativeapp
+		SccLocalPath4 = Pozative.QRY
+		SccProvider4 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName5 = Pozative.UTL\\Pozative.UTL.csproj
+		SccProjectName5 = Pozative.UTL
+		SccAuxPath5 = https://dev.azure.com/pozativeapp
+		SccLocalPath5 = Pozative.UTL
+		SccProvider5 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+EndGlobal

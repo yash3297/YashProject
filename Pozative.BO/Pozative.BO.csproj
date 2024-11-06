@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{844160CF-487D-4D56-BF47-C8807366DEC5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pozative.BO</RootNamespace>
+    <AssemblyName>Pozative.BO</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbelProviderColumnAptMap.cs" />
+    <Compile Include="ActiveApps_BO.cs" />
+    <Compile Include="AditLocationSyncBO.cs" />
+    <Compile Include="AditLoginPostBO.cs" />
+    <Compile Include="AditServer_ConnectioBO.cs" />
+    <Compile Include="AdminLoginDetailBO.cs" />
+    <Compile Include="AppointmentStatusWIthTypeBO.cs" />
+    <Compile Include="AppointmentTypeBO.cs" />
+    <Compile Include="PullPatientFormDocResponse.cs" />
+    <Compile Include="EaglesoftTableSchema.cs" />
+	<Compile Include="Pull_InsuranceBO.cs" />
+    <Compile Include="Pull_Last_SyncTimeBO.cs" />
+    <Compile Include="EHRInfoBO.cs" />
+    <Compile Include="Pull_PozativeConfiguration.cs" />
+    <Compile Include="PushEventAcknowledgement.cs" />
+    <Compile Include="Push_FolderListBO.cs" />
+    <Compile Include="Pull_FolderListBO.cs" />
+    <Compile Include="PatientMedicationBO.cs" />
+    <Compile Include="PozativeConfigurationBO.cs" />
+    <Compile Include="PullPatientMedicationLocal_To_live.cs" />
+    <Compile Include="Pull_CustomHoursBO.cs" />
+    <Compile Include="Pull_MedicationBO.cs" />
+    <Compile Include="Pull_Patient_OptOutBO.cs" />
+    <Compile Include="Patientnotexist_Response.cs" />
+    <Compile Include="Pull_CompareAppointment.cs" />
+    <Compile Include="Pull_PatientFollowUp.cs" />
+    <Compile Include="Pull_PatientProfileImage.cs" />
+    <Compile Include="Pull_PatientSMSCallLog.cs" />
+    <Compile Include="Pull_UsersBO.cs" />
+    <Compile Include="Pull_UsersLocal_To_LiveBO.cs" />
+    <Compile Include="PushUserBO.cs" />
+    <Compile Include="Push_AbelDent_Form.cs" />
+    <Compile Include="Push_InsuranceBO.cs" />
+    <Compile Include="Push_LastSyncTimeBO.cs" />
+    <Compile Include="Push_MedicationBO.cs" />
+    <Compile Include="Push_PatientBalance.cs" />
+    <Compile Include="Push_PatientFollowUp.cs" />
+    <Compile Include="Push_PatientStatus.cs" />
+    <Compile Include="Pull_PatientPayment.cs" />
+    <Compile Include="Push_EasyDental_Form.cs" />
+    <Compile Include="Push_CD_FormMaster.cs" />
+    <Compile Include="Push_Dentrix_Form.cs" />
+    <Compile Include="LocationEHRUPdateForVersionBO.cs" />
+    <Compile Include="Pull_DiseaseBO.cs" />
+    <Compile Include="Pull_LocationEHRUPdateForVersionBO.cs" />
+    <Compile Include="Pull_MultiApptBO.cs" />
+    <Compile Include="DesktopVersionBO.cs" />
+    <Compile Include="EHRListWithWebIdBO.cs" />
+    <Compile Include="InstallPozativeBO.cs" />
+    <Compile Include="LocationEHRBO.cs" />
+    <Compile Include="LocationTimeZoneBO.cs" />
+    <Compile Include="LocationTimeZoneResBO.cs" />
+    <Compile Include="PozativeLocationDetailBO.cs" />
+    <Compile Include="PozatvieLoginPostBO.cs" />
+    <Compile Include="Pull_AppointmentBO.cs" />
+    <Compile Include="Pull_ApptStatusBO.cs" />
+    <Compile Include="Pull_OperatoryEventBO.cs" />
+    <Compile Include="Pull_OperatoryHoursBO.cs" />
+    <Compile Include="Pull_PatientBO.cs" />
+    <Compile Include="Pull_ApptTypeBO.cs" />
+    <Compile Include="Pull_OperatoryBO.cs" />
+    <Compile Include="Pull_PatientFormBO.cs" />
+    <Compile Include="Pull_PatientInfo_MedicalHistoryBO.cs" />
+    <Compile Include="Pull_ProviderHoursBO.cs" />
+    <Compile Include="Pull_ProvidersBO.cs" />
+    <Compile Include="Pull_RecallTypeBO.cs" />
+    <Compile Include="Pull_SpecialityBO.cs" />
+    <Compile Include="Push_AlertMasterBO.cs" />
+    <Compile Include="Push_ChangeStatusAppointmentListBO.cs" />
+    <Compile Include="Push_DiseasesBO.cs" />
+    <Compile Include="Push_FormMasterBO.cs" />
+    <Compile Include="Push_HolidayBO.cs" />
+    <Compile Include="Push_Is_Appt_DoubleBook.cs" />
+    <Compile Include="Push_OD_SheetDef.cs" />
+    <Compile Include="Push_OD_SheetFieldDef.cs" />
+    <Compile Include="Push_OperatoryEventBO.cs" />
+    <Compile Include="Push_OperatoryHoursBO.cs" />
+    <Compile Include="Push_Patient_FormBO.cs" />
+    <Compile Include="Push_PozativeAppointmentBO.cs" />
+    <Compile Include="Push_PozativeConfiguration.cs" />
+    <Compile Include="Push_ProviderOfficeHours.cs" />
+    <Compile Include="Push_ProviderHoursBO.cs" />
+    <Compile Include="Push_SectionItemMasterBO.cs" />
+    <Compile Include="Push_SectionItemOptionMasterBO.cs" />
+    <Compile Include="Push_SectionMasterBO.cs" />
+    <Compile Include="Push_SpecialityBO.cs" />
+    <Compile Include="RecallTypeBO.cs" />
+    <Compile Include="ResponceWithWebIDBO.cs" />
+    <Compile Include="Push_PatientBO.cs" />
+    <Compile Include="Push_AppointmentBO.cs" />
+    <Compile Include="Common\ErrorBO.cs" />
+    <Compile Include="Common\SystemBO.cs" />
+    <Compile Include="LocationDetailBO.cs" />
+    <Compile Include="Push_OperatoryBO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Push_ProvidersBO.cs" />
+    <Compile Include="ResponceBO.cs" />
+    <Compile Include="Responce_HolidayBO.cs" />
+    <Compile Include="Response_EaglesoftSectionMaster.cs" />
+    <Compile Include="Response_Is_Appt_DoubleBook.cs" />
+    <Compile Include="Responce_OperatoryOfficeHours.cs" />
+    <Compile Include="Response_ProviderOfficeHours.cs" />
+    <Compile Include="UpdateLocationEHRUPdateForVersionBO.cs" />
+    <Compile Include="UpdateTimeZoneServerToWebLocationBO.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,653 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{123704D1-699D-4367-BB88-B6743D95F753}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pozative</RootNamespace>
+    <AssemblyName>Pozative</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <SccProjectName>%24/Pozative/Pozative</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>https://dev.azure.com/pozativeapp</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>2</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>PozativeIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject>Pozative.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AditCrystalPM.BAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\AditCrystalPM.BAL.dll</HintPath>
+    </Reference>
+    <Reference Include="AditOfficeMate.BAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\AditOfficeMate.BAL.dll</HintPath>
+    </Reference>
+    <Reference Include="AditSqlLite.BAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\AditSqlLite.BAL.dll</HintPath>
+    </Reference>
+    <Reference Include="Ctree.Data.SqlClient">
+      <HintPath>Dll\Ctree.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="EaglesoftDocument, Version=1.0.0.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\EaglesoftDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="INIFileParser, Version=2.5.2.0, Culture=neutral, PublicKeyToken=79af7b307b65cf3c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\INIFileParser.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisualBasic.PowerPacks.Vs.1.0.0\lib\Microsoft.VisualBasic.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisualBasic.PowerPacks.Vs.1.0.0\lib\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.TaskScheduler, Version=1.5.3691.21250, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\Microsoft.Win32.TaskScheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\Mysql6.9\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Patterson.Eaglesoft.Library.Dtos">
+      <HintPath>Dll\Patterson.Eaglesoft.Library.Dtos.dll</HintPath>
+    </Reference>
+    <Reference Include="Patterson.PTCBaseObjects.SharedObjects">
+      <HintPath>Dll\Patterson.PTCBaseObjects.SharedObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\net45\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.77.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>Dll\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceProcess, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dll\System.ServiceProcess.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommonClass\CommonFunction.cs" />
+    <Compile Include="CommonClass\EasyDentalConnection.cs" />
+    <Compile Include="CommonClass\GoalBase.cs" />
+    <Compile Include="CommonClass\ODBCDriver.cs" />
+    <Compile Include="CommonClass\ODBCDSN.cs" />
+    <Compile Include="CommonClass\ODBCManager.cs" />
+    <Compile Include="CommonClass\SendEMail.cs" />
+    <Compile Include="CommonClass\ShowMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonClass\ShowMessage.designer.cs">
+      <DependentUpon>ShowMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonClass\ToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CommonClass\ucTextbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonClass\ucTextbox.Designer.cs">
+      <DependentUpon>ucTextbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonClass\WDSColor.cs" />
+    <Compile Include="cPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cPanel.Designer.cs">
+      <DependentUpon>cPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DentrixDoc\DentrixDocumentAttachement.cs" />
+    <Compile Include="frmAditModuleSyncConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAditModuleSyncConfig.Designer.cs">
+      <DependentUpon>frmAditModuleSyncConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAppointmentDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAppointmentDetail.Designer.cs">
+      <DependentUpon>frmAppointmentDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonClass\frmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonClass\frmMessageBox.Designer.cs">
+      <DependentUpon>frmMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClinicConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClinicConfiguration.designer.cs">
+      <DependentUpon>frmClinicConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfiguration_Auto _OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguration_Auto _OLD.Designer.cs">
+      <DependentUpon>frmConfiguration_Auto _OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfiguration_Auto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguration_Auto.Designer.cs">
+      <DependentUpon>frmConfiguration_Auto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatabaseConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatabaseConfiguration.designer.cs">
+      <DependentUpon>frmDatabaseConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPassword.designer.cs">
+      <DependentUpon>frmPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPozativeHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPozativeHome.Designer.cs">
+      <DependentUpon>frmPozativeHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguration.Designer.cs">
+      <DependentUpon>frmConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplashScreen.designer.cs">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.cs" />
+    <Compile Include="NewProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SoftDenteEntiry\Address.cs" />
+    <Compile Include="SoftDenteEntiry\AddressType.cs" />
+    <Compile Include="SoftDenteEntiry\Appointment.cs" />
+    <Compile Include="SoftDenteEntiry\AppointmentManager.cs" />
+    <Compile Include="SoftDenteEntiry\AppointmentSeries.cs" />
+    <Compile Include="SoftDenteEntiry\BaseDataContract.cs" />
+    <Compile Include="SoftDenteEntiry\BlockedSlot.cs" />
+    <Compile Include="SoftDenteEntiry\BlockedSlotSeries.cs" />
+    <Compile Include="SoftDenteEntiry\ContactInformation.cs" />
+    <Compile Include="SoftDenteEntiry\DataContractAttribute.cs" />
+    <Compile Include="SoftDenteEntiry\DataContractManager.cs" />
+    <Compile Include="SoftDenteEntiry\DataMemberAttribute.cs" />
+    <Compile Include="SoftDenteEntiry\DefaultOfficeHour.cs" />
+    <Compile Include="SoftDenteEntiry\ErrorCode.cs" />
+    <Compile Include="SoftDenteEntiry\InteropFactory.cs" />
+    <Compile Include="SoftDenteEntiry\InteropHelper.cs" />
+    <Compile Include="SoftDenteEntiry\ISoftDentImports.cs" />
+    <Compile Include="SoftDenteEntiry\ISoftDentInterop.cs" />
+    <Compile Include="SoftDenteEntiry\MaritalStatus.cs" />
+    <Compile Include="SoftDenteEntiry\Office.cs" />
+    <Compile Include="SoftDenteEntiry\Operatory.cs" />
+    <Compile Include="SoftDenteEntiry\OperatorySeries.cs" />
+    <Compile Include="SoftDenteEntiry\OtherIdentifier.cs" />
+    <Compile Include="SoftDenteEntiry\Patient.cs" />
+    <Compile Include="SoftDenteEntiry\PatientMin.cs" />
+    <Compile Include="SoftDenteEntiry\PatientMinSeries.cs" />
+    <Compile Include="SoftDenteEntiry\Person.cs" />
+    <Compile Include="SoftDenteEntiry\PhoneNumber.cs" />
+    <Compile Include="SoftDenteEntiry\Procedure.cs" />
+    <Compile Include="SoftDenteEntiry\Provider.cs" />
+    <Compile Include="SoftDenteEntiry\ProviderSeries.cs" />
+    <Compile Include="SoftDenteEntiry\RecordBased.cs" />
+    <Compile Include="SoftDenteEntiry\RecordStatus.cs" />
+    <Compile Include="SoftDenteEntiry\Sex.cs" />
+    <Compile Include="SoftDenteEntiry\SoftDentImports.cs" />
+    <Compile Include="SoftDenteEntiry\SoftDentImports12.cs" />
+    <Compile Include="SoftDenteEntiry\SoftDentImports12CS.cs" />
+    <Compile Include="SoftDenteEntiry\SoftDentImports14.cs" />
+    <Compile Include="SoftDenteEntiry\SoftDentImports14CS.cs" />
+    <Compile Include="SoftDenteEntiry\SoftDentImports14_2.cs" />
+    <Compile Include="SoftDenteEntiry\SoftDentImports14_2CS.cs" />
+    <Compile Include="SoftDenteEntiry\SoftDentImportsCS.cs" />
+    <Compile Include="SoftDenteEntiry\SoftDentImportsFactory.cs" />
+    <Compile Include="SoftDenteEntiry\SoftDentInterop.cs" />
+    <Compile Include="SoftDenteEntiry\SoftDentRawImports.cs" />
+    <Compile Include="SoftDenteEntiry\SoftDentRawImports12.cs" />
+    <Compile Include="SoftDenteEntiry\SoftDentRawImports12CS.cs" />
+    <Compile Include="SoftDenteEntiry\SoftDentRawImports14.cs" />
+    <Compile Include="SoftDenteEntiry\SoftDentRawImports14CS.cs" />
+    <Compile Include="SoftDenteEntiry\SoftDentRawImports14_2.cs" />
+    <Compile Include="SoftDenteEntiry\SoftDentRawImports14_2CS.cs" />
+    <Compile Include="SoftDenteEntiry\SoftDentRawImportsCS.cs" />
+    <Compile Include="SoftDenteEntiry\SoftDentRegistryKey.cs" />
+    <Compile Include="SoftDenteEntiry\SoftDentVersion.cs" />
+    <Compile Include="SoftDenteEntiry\User.cs" />
+    <Compile Include="SynchPartial\clsEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynchPartial\clsZohoInstall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_CrystalPM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_CrystalPM.Designer.cs">
+      <DependentUpon>SynchPartial_CrystalPM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_OfficeMate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_OfficeMate.designer.cs">
+      <DependentUpon>SynchPartial_OfficeMate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_AbelDent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_AbelDent.designer.cs">
+      <DependentUpon>SynchPartial_AbelDent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_EasyDental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_EasyDental.Designer.cs">
+      <DependentUpon>SynchPartial_EasyDental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_PracticeWeb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_PracticeWeb.Designer.cs">
+      <DependentUpon>SynchPartial_PracticeWeb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_PracticeAnalytics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_PracticeAnalytics.designer.cs">
+      <DependentUpon>SynchPartial_PracticeAnalytics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_ClearDent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_ClearDent.Designer.cs">
+      <DependentUpon>SynchPartial_ClearDent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_Eaglesoft_WithoutAPI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_Eaglesoft_WithoutAPI.designer.cs">
+      <DependentUpon>SynchPartial_Eaglesoft_WithoutAPI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SynchPartial\frmLiveDBRecordPull.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynchPartial\frmLiveDBRecordPull.Designer.cs">
+      <DependentUpon>frmLiveDBRecordPull.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SynchPartial\frmLiveDBRecordPush.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynchPartial\frmLiveDBRecordPush.Designer.cs">
+      <DependentUpon>frmLiveDBRecordPush.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_Dentrix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_Dentrix.Designer.cs">
+      <DependentUpon>SynchPartial_Dentrix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_OpenDental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_OpenDental.Designer.cs">
+      <DependentUpon>SynchPartial_OpenDental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_PracticeWork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_PracticeWork.Designer.cs">
+      <DependentUpon>SynchPartial_PracticeWork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_Softdent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_Softdent.Designer.cs">
+      <DependentUpon>SynchPartial_Softdent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_Tracker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynchPartial\SynchPartial_Tracker.Designer.cs">
+      <DependentUpon>SynchPartial_Tracker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransparentPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="CommonClass\ShowMessage.resx">
+      <DependentUpon>ShowMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonClass\ucTextbox.resx">
+      <DependentUpon>ucTextbox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAditModuleSyncConfig.resx">
+      <DependentUpon>frmAditModuleSyncConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAppointmentDetail.resx">
+      <DependentUpon>frmAppointmentDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonClass\frmMessageBox.resx">
+      <DependentUpon>frmMessageBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClinicConfiguration.resx">
+      <DependentUpon>frmClinicConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguration.resx">
+      <DependentUpon>frmConfiguration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguration_Auto _OLD.resx">
+      <DependentUpon>frmConfiguration_Auto _OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguration_Auto.resx">
+      <DependentUpon>frmConfiguration_Auto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatabaseConfiguration.resx">
+      <DependentUpon>frmDatabaseConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPassword.resx">
+      <DependentUpon>frmPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPozativeHome.resx">
+      <DependentUpon>frmPozativeHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplashScreen.resx">
+      <DependentUpon>frmSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <Guid>{F935DC20-1CF0-11D0-ADB9-00C04FD58A0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Shell32">
+      <Guid>{50A7E9B0-70EF-11D1-B75A-00A0C90564FE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="TaskScheduler">
+      <Guid>{E34CB9F1-C7F7-424C-BE29-027DCC09363A}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector.png" />
+    <None Include="Image\update_icon.png" />
+    <Content Include="bin\Debug\EHRDefaultConfigurationMissing.txt" />
+    <Content Include="bin\Debug\EHRNotExists.txt" />
+    <Content Include="bin\Debug\ErrorMessage.txt" />
+    <Content Include="bin\Debug\MultipleClinicsExists.txt" />
+    <Content Include="bin\Debug\Success.txt" />
+    <Content Include="bin\Debug\WelcomeMessage.txt" />
+    <Content Include="CrystalPM\MySql.Data.dll" />
+    <Content Include="Dll\AditCrystalPM.BAL.dll" />
+    <Content Include="Dll\AditCrystalPM.QRY.dll" />
+    <Content Include="Dll\AditOfficeMate.BAL.dll" />
+    <Content Include="Dll\AditOfficeMate.QRY.dll" />
+    <Content Include="Dll\AditSqlLite.BAL.dll" />
+    <Content Include="Dll\AditSqlLite.BO.dll" />
+    <Content Include="Dll\Ctree.Data.SqlClient.dll" />
+    <Content Include="Dll\Dentrix.API.Common.dll" />
+    <Content Include="Dll\Dtx.Common.dll" />
+    <Content Include="Dll\EaglesoftDocument.dll" />
+    <Content Include="Dll\INIFileParser.dll" />
+    <Content Include="Dll\Ionic.Zip.dll" />
+    <Content Include="Dll\Microsoft.Win32.TaskScheduler.dll" />
+    <Content Include="Dll\MySql.Data.dll" />
+    <Content Include="Dll\Newtonsoft.Json.dll" />
+    <Content Include="Dll\Patterson.Eaglesoft.Library.Dtos.dll" />
+    <Content Include="Dll\Patterson.PTCBaseObjects.SharedObjects.dll" />
+    <Content Include="Dll\Persist.dll" />
+    <Content Include="Dll\RestSharp.dll" />
+    <Content Include="Dll\System.Data.SQLite.dll" />
+    <Content Include="Dll\System.Data.SqlServerCe.dll" />
+    <Content Include="Dll\System.Net.Http.Formatting.dll" />
+    <Content Include="Dll\System.ServiceProcess.dll" />
+    <None Include="Resources\Adit_Bg_Image.png" />
+    <None Include="Resources\Completed_Progress.png" />
+    <Content Include="bin\Debug\MultipleEHRExists.txt" />
+    <None Include="Resources\icons8-minimize-30.png" />
+    <None Include="Resources\icons8-minimize-24.png" />
+    <None Include="Resources\icons8-minimize-16.png" />
+    <None Include="Resources\icons8-close-16.png" />
+    <None Include="Resources\icons8-close-16 %281%29.png" />
+    <None Include="Resources\Info.png" />
+    <None Include="Resources\Chat.png" />
+    <None Include="Resources\Adit-Web-Loader100pxColoringCircle.gif" />
+    <None Include="Resources\Adit_Web_Loader_WhiteBG_100p.gif" />
+    <None Include="Resources\Adit-Web-Loader_with-Color-100p.gif" />
+    <None Include="Resources\Adit-Web-Loader-2_white-boader.gif" />
+    <None Include="Resources\Chat_White.png" />
+    <None Include="Resources\AditText.png" />
+    <None Include="Resources\PozativeIOC.png" />
+    <None Include="Resources\SecurityGray.png" />
+    <None Include="Resources\SecurityGreen.png" />
+    <None Include="Resources\SecurityFail.png" />
+    <None Include="Resources\SharedPath.png" />
+    <EmbeddedResource Include="Resources\Folder.png" />
+    <None Include="Resources\Cancel.jpg" />
+    <None Include="Resources\InfoGray.png" />
+    <None Include="Resources\Close.png" />
+    <None Include="Resources\OrangeTickVector.png" />
+    <Content Include="Resources\update_icon.png" />
+    <None Include="Image\Setting.png" />
+    <None Include="Image\OFF.png" />
+    <None Include="Image\ON.png" />
+    <None Include="Image\reload icon.png" />
+    <Content Include="Image\Minimize.png" />
+    <Content Include="Resources\OFF.png" />
+    <Content Include="Resources\ON.png" />
+    <Content Include="Resources\Img_Dentrix.png" />
+    <Content Include="Resources\Img_Eaglesoft.png" />
+    <Content Include="Resources\Img_opendental.png" />
+    <Content Include="Resources\reload icon.ico" />
+    <Content Include="Resources\reload icon.png" />
+    <Content Include="Resources\Setting.png" />
+    <None Include="bin\Debug\PozativeIcon.ico" />
+    <None Include="Image\Img_Eaglesoft.png" />
+    <None Include="Image\Img_opendental.png" />
+    <None Include="Image\Img_Dentrix.png" />
+    <Content Include="CommonClass\screw.png" />
+    <Content Include="Dll\shell32.dll" />
+    <Content Include="PozativeIcon.ico" />
+    <Content Include="Resources\AditIcon.ico" />
+    <EmbeddedResource Include="Resources\Adit.pfx" />
+    <None Include="Resources\AppRestart.png" />
+    <None Include="Resources\Appinsystemtry.png" />
+    <Content Include="Resources\PozativeIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pozative.BAL\Pozative.BAL.csproj">
+      <Project>{3fb2037c-b2ce-416e-98ec-bc81aec418d2}</Project>
+      <Name>Pozative.BAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pozative.BO\Pozative.BO.csproj">
+      <Project>{844160cf-487d-4d56-bf47-c8807366dec5}</Project>
+      <Name>Pozative.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pozative.DAL\Pozative.DAL.csproj">
+      <Project>{b6ecc8fe-e05c-4b23-980f-cd8e871a6ee5}</Project>
+      <Name>Pozative.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pozative.UTL\Pozative.UTL.csproj">
+      <Project>{c2da7e9a-81e4-46ca-a5df-6ce033bbdd18}</Project>
+      <Name>Pozative.UTL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

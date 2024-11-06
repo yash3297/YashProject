@@ -1,0 +1,204 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Pozative.BO
+{
+    public class PatientTableSchema
+    {
+        public string patient_id;
+        public string first_name;
+        public string last_name;
+        public string salutation;
+        public string address_1;
+        public string address_2;
+        public string city;
+        public string state;
+        public string zipcode;
+        public string home_phone;
+        public string work_phone;
+        public string ext;
+        public string status;
+        public string sex;
+        public string marital_status;
+        public string responsible_party_status;
+        public string responsible_party;
+        public string social_security;
+        public string birth_date;
+        public string notes;
+        public string preferred_dentist;
+        public string preferred_hygienist;
+        public string recall_frequency;
+        public string cleaning_time;
+        public string receive_recalls;
+        public string discount_id;
+        public string current_bal;
+        public string thirty_day;
+        public string sixty_day;
+        public string ninety_day;
+        public string contract_balance;
+        public string estimated_insurance;
+        public string first_visit_date;
+        public string last_date_seen;
+        public string cancelled_appointments;
+        public string charges_mtd;
+        public string collections_mtd;
+        public string charges_ytd;
+        public string collections_ytd;
+        public string failed_appointments;
+        public string prim_responsible_id;
+        public string prim_relationship;
+        public string prim_employer_id;
+        public string prim_outstanding_balance;
+        public string prim_benefits_remaining;
+        public string prim_remaining_deductible;
+        public string sec_responsible_id;
+        public string sec_relationship;
+        public string sec_employer_id;
+        public string sec_outstanding_balance;
+        public string sec_benefits_remaining;
+        public string sec_remaining_deductible;
+        public string short_notice;
+        public string prefers_ampm;
+        public string last_regular_appointment;
+        public string next_regular_appointment;
+        public string last_preventive_appointment;
+        public string next_preventive_appointment;
+        public string fee_level_id;
+        public string recommended_work;
+        public string submitted_total;
+        public string prim_total_paid;
+        public string sec_total_paid;
+        public string patient_status;
+        public string policy_holder_status;
+        public string next_recall_date;
+        public string last_recall_date;
+        public string ytd_visits;
+        public string next_preventive_appt_time;
+        public string next_regular_appt_time;
+        public string school;
+        public string school_city;
+        public string employment_status;
+        public string employment_id_number;
+        public string student_status;
+        public string medicaid_id;
+        public string death_indicator;
+        public string signature_on_file;
+        public string release_info_on_file;
+        public string carrier_id;
+        public string epsdt_flag;
+        public string patient_image_id;
+        public string other_id;
+        public string guards_id;
+        public string practice_id;
+        public string email_address;
+        public string date_entered;
+        public string last_soft_exam;
+        public string last_restorative_exam;
+        public string last_tmj_exam;
+        public string last_occl_exam;
+        public string last_intraoral_exam;
+        public string last_radiography_exam;
+        public string last_cosmetic_exam;
+        public string last_head_exam;
+        public string last_habits_exam;
+        public string last_general_exam;
+        public string last_cancer_exam;
+        public string last_history_exam;
+        public string last_bitewings;
+        public string last_full_mouth;
+        public string teeth_status;
+        public string recall_batch;
+        public string last_pano_date;
+        public string pharmacy_id;
+        public string neither_appointments;
+        public string pre_med;
+        public string rx_id;
+        public string missing_teeth;
+        public string receive_email;
+        public string chart_id;
+        public string cell_phone;
+        public string pager_phone;
+        public string drivers_license;
+        public string hipaa_priv_pract;
+        public string hipaa_authorization;
+        public string hipaa_priv_pract_date;
+        public string hipaa_authorization_date;
+        public string hipaa_consent;
+        public string hipaa_consent_date;
+        public string prim_member_id;
+        public string sec_member_id;
+        public string daily_charges;
+        public string daily_collections;
+        public string ortho_patient;
+        public string ortho_months_of_tx;
+        public string ortho_date_started;
+        public string ortho_ins_bill_freq;
+        public string preferred_name;
+        public string middle_initial;
+        public string school_address;
+        public string school_state;
+        public string school_zipcode;
+        public string sec_depend_code;
+        public string caesy_language;
+        public string receives_sms;
+        public string medicaid_seq_num;
+        public string universal_id;
+        public string password;
+        public string security_question_one;
+        public string security_question_two;
+        public string security_question_three;
+        public string security_answer_one;
+        public string security_answer_two;
+        public string security_answer_three;
+        public string registration_verified;
+        public string DolphinID;
+        public string password_salt;
+        public string encrypted_social_security;
+        public string last_medical_history;
+    }
+
+    public class ApptLogTableSchema
+    {
+        public string appt_log_id;
+        public string user_id;
+        public string appt_id;
+        public string appt_type;
+        public string appt_log_action;
+        public string old_date;
+        public string new_date;
+        public string old_slot;
+        public string new_slot;
+        public string old_num_units;
+        public string new_num_units;
+        public string old_chair_num;
+        public string new_chair_num;
+        public string date_deleted;
+        public string patient_id;
+        public string patient_name;
+        public string old_provider;
+        public string new_provider;
+        public string old_other_provider;
+        public string new_other_provider;
+        public string old_appttype_desc;
+        public string new_appttype_desc;
+        public string modified_by;
+        public string practice_id;
+        public string practice_name;
+    }
+
+    public class patient_answers
+    {
+        public string patient_prompt_id;
+        public string patient_id;
+        public string answer;
+    }
+
+    public class used_patients
+    {
+        public string patient_id;
+        public string time_used;
+    }   
+}
